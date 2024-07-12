@@ -1,0 +1,274 @@
+* {
+    font-family: "Baskervville SC", serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #212529;
+}
+
+body {
+    animation: grow 1s;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.linear {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    animation: transition 3s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes transition {
+    0% {
+      transform: skewY(45deg) translate(0, 5000px);
+    }
+    50% {
+      transform: skewY(45deg) translate(0, 0);
+    }
+    100% {
+      transform: skewY(45deg) translate(0, -5000px)
+    }
+  }
+
+.section {
+    color: black;
+    background-color: #fff;
+    padding: 60px 0;
+    overflow: clip;
+}
+
+.about .progress {
+    height: 50px;
+    display: block;
+    background: none;
+    border-radius: 0;
+    margin-top: 15px;
+}
+
+.about .progress .skill {
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+}
+
+.about .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+
+.about .progress-bar-wrap {
+    background-color: #000;
+    height: 50px;
+}
+
+.about .progress-bar {
+    width: 1px;
+    height: 50px;
+    transition: 0.9s;
+    background-color: #000;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    border: 1px solid #000;
+}
+
+.contact .info-item i {
+    font-size: 20px;
+    color: #000;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin-right: 15px;
+}
+
+.contact .php-email-form .loading {
+    display: none;
+    background: #000;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 24px;
+}
+
+.contact .php-email-form .error-message {
+    display: none;
+    background: #df1529;
+    color: #ffffff;
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.contact .php-email-form .sent-message {
+    display: none;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.contact .php-email-form button[type=submit] {
+    color: #fff;
+    background: #000;
+    border: 0;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+.container.section-title.aos-init.aos-animate {
+    text-align: center;
+}
+
+.resume .resume-item {
+    padding: 0 0 20px 20px;
+    border-left: 2px solid rgb(41, 174, 197);
+    position: relative;
+}
+
+.resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid rgb(22, 103, 117);
+}
+
+.grid {
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+    width: 90%;
+    max-width: none;
+    margin: 100px auto;
+}
+
+.grid .wrapper {
+    width: 100%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+}
+
+#portfolio {
+    animation: fadeInAnimation ease 5s;
+    animation-delay: 5s;
+    animation-iteration-count: 3;
+    animation-fill-mode: forwards;
+}
+
+.word {
+    grid-area: 1 / 1 / 3 / 3;
+    width: 600px;
+    animation-delay: 5s;
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 5;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.test1 {
+    grid-area: 3 / 1 / 5 / 2;
+    align-self: start;
+}
+
+.cont1 {
+    grid-area: 5 / 1 / 6 / 2;
+    align-self: end;
+}
+
+.test2 {
+    grid-area: 2 / 2 / 5 / 3;
+}
+
+.cont2 {
+    grid-area: 5 / 2 / 6 / 3;
+    align-self: end;
+}
+
+.test3 {
+    grid-area: 1 / 3 / 5 / 4;
+}
+
+.cont3 {
+    grid-area: 5 / 3 / 6 / 4;
+    align-self: end;
+}
+
+.cont1,
+.cont2,
+.cont3 {
+    height: 100%;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+}
+
+.footer .social-links a {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    font-size: 20px;
+    color: #000;
+}

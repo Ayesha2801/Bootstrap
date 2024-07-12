@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="photo/favicon.jfif" type="image/x-icon">
+    <title>Code Creations Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="p-3 z-1 text-bg-dark position-fixed w-100 object-fit-cover">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <h4>Ayesha Siddiqua</h4>
+                <ul class="nav mx-4 col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#home" class="nav-link px-4 text-white">Home</a></li>
+                    <li><a href="#about" class="nav-link px-4 text-white">About</a></li>
+                    <li><a href="#portfolio" class="nav-link px-4 text-white">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link px-4 text-white">Contact us</a></li>
+                </ul>
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark text-bg-light" placeholder="Search..."
+                        aria-label="Search">
+                </form>
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Login</button>
+                    <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">Sign-up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Login Here</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signupModalLabel">Sign Up</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <label for="exampleFormControlInput1" class="form-label">Name</label>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                        </div>
+                    </div><br>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Password</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <button type="submit" class="btn btn-primary text-center">Sign in</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="photo text-bg-light" id="home">
+        <img src="photo/background.jpg" class="img-fluid" width="100%">
+    </div>
+    <div class="container my-5">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                <h1 class="display-4 fw-bold lh-1">Web Development</h1>
+                <p>
+                    Web development is a dynamic and rewarding career path that involves building websites and web
+                    applications. As technology continues to evolve, the demand for skilled web developers remains high
+                    across various industries.
+                </p>
+                <p>
+                    We take a collaborative approach to web development, working closely with our clients to understand
+                    their goals and translate them into functional and scalable websites. Our team combines technical
+                    expertise with creativity to deliver custom solutions that exceed expectations.
+                </p>
+                <p>
+                    To start a career in web development, consider pursuing a formal education in computer science,
+                    software engineering, or related fields. Additionally, self-study through online courses, tutorials,
+                    and hands-on projects can help build practical skills and portfolios.
+                </p>
+            </div>
+            <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                <img class="rounded-lg-3" src="photo/border.avif">
+            </div>
+        </div>
+    </div>
+    <section id="about" class="about section">
+        <div class="linear"></div>
+        <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <div class="row gy-4">
+                <div class="col-md-6">
+                    <div class="row justify-content-between gy-4">
+                        <div class="col-lg-5">
+                            <img src="photo/profile.jfif" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-lg-7 about-info">
+                            <p><strong>Name: </strong> <span>Ayesha Siddiqua</span></p>
+                            <p><strong>Education: </strong> <span>B.Com General Commerce</span></p>
+                            <p><strong>Profile: </strong> <span>Web developer</span></p>
+                            <p><strong>Email: </strong> <span>anees13576@gmail.com</span></p>
+                            <p><strong>Phone: </strong> <span>(+91) 979 141 3576</span></p>
+                        </div>
+                    </div>
+                    <div class="skills-content skills-animation">
+                        <h5>Skills</h5>
+                        <div class="progress">
+                            <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span class="skill"><span>JavaScript</span> <i class="val">5%</i></span>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span class="skill"><span>React JS</span> <i class="val">0%</i></span>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-me">
+                        <h4>About me</h4>
+                        <p>
+                            Greetings! My name is Ayesha Siddiqua, and I am currently pursuing a Bachelor of Commerce
+                            degree in General Commerce from Madras University. Originally from Ambur Town, I have
+                            developed a profound interest in Web Development.
+                        </p>
+                        <p>
+                            Outside of my academic pursuits in web development, I find great joy and fulfillment in
+                            various creative and intellectual endeavors. Cooking has been a long-standing passion of
+                            mine, where I explore different cuisines and experiment with flavors to create delightful
+                            dishes for family and friends. Additionally, I enjoy expressing myself through artwork,
+                            whether it's sketching, painting, or exploring other forms of visual expression. Art allows
+                            me to channel my creativity and provides a refreshing break from my studies.
+                        </p>
+                        <p>
+                            In my journey towards becoming a professional web developer, I am driven by a strong desire
+                            to combine my technical skills with creative problem-solving to develop innovative and
+                            user-friendly websites. I am enthusiastic about leveraging technology to make a positive
+                            impact in the digital sphere and contribute to meaningful projects that resonate with users.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="resume" class="resume section">
+        <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+            <h2>Educational Background</h2>
+            <p>"Explore my educational background, demonstrating qualifications that contribute to my professional
+                portfolio."
+            </p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="resume-title">Education</h3>
+                    <div class="resume-item">
+                        <h4>Primary School</h4>
+                        <h5>2007 - 2014</h5>
+                        <h6>Quiade Millat Nursery and Primary School</h6>
+                        <p><em>A beacon of excellence in education nestled in the heart of Mottukollai, Ambur.
+                                Established in 1999 under the auspices of the Islamic Welfare Association, our school
+                                has been a nurturing ground for young minds, encouraging them to explore, learn, and
+                                grow in a supportive and inclusive environment. Our dedicated educators are committed to
+                                sparking a love for learning, and fostering a community where every child is valued,
+                                inspired, and empowered to reach their full potential.</em></p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Higher Secondary </h4>
+                        <h5>2014 - 2021</h5>
+                        <h6>HASNATH E JARIA(G)HR.SE.SC,AMBUR</h6>
+                        <p><em>HASNATH E JARIA(G)HR.SE.SC,AMBUR was established in 1964 and it is managed by the Pvt.
+                                Aided. It is located in Urban area. It is located in MADHANUR block of VELLORE district
+                                of Tamil Nadu. The school consists of Grades from 6 to 12. The school is Girls and it
+                                doesn't have an attached pre-primary section. The school is Non-Ashram type (Govt.) in
+                                nature and is not using school building as a shift-school. Urdu is the medium of
+                                instructions in this school. This school is approachable by all weather road. In this
+                                school academic session starts in April.</em></p>
+                    </div>
+                </div>
+                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="resume-title">Professional Course</h3>
+                    <div class="resume-item">
+                        <h4>Degree Course</h4>
+                        <h5>2021 - 2024</h5>
+                        <h6>Universiy of Madras</h6>
+                        <p><em>The Public Petition dated 11-11-1839 initiated the establishment of Madras University. It
+                                was in January 1840 with Mr.George Norton as its President, that the University Board
+                                was constituted. In 1854 after a lapse of 14 years, the Government of India formulated a
+                                systematic educational policy for India and as a sequel to this on 5th September 1857 by
+                                an Act of Legislative Council of India, the University was established. The University
+                                was organised in the model of London University.</em></p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Professional Skills </h4>
+                        <h5>2024 - Present</h5>
+                        <p><em>Learning web development involves mastering a diverse range of skills essential for
+                                creating functional and aesthetically pleasing websites and web applications. It begins
+                                with understanding the core languages and technologies: HTML for structuring content,
+                                CSS for styling and layout, and JavaScript for interactive elements and dynamic
+                                behavior. Additionally, proficiency in version control systems like Git ensures
+                                efficient collaboration and code management, while knowledge of responsive design
+                                principles guarantees that websites are accessible and perform well across different
+                                devices and screen sizes. </em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="album shadow-lg py-5 bg-light d-flex flex-column align-items-center justify-content-center"
+        id="portfolio">
+        <h2>Portfolio</h2>
+        <p>"Our portfolio showcases our expertise and accomplishments, ready to assist you with our range of services."
+        </p>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="photo/playerxx.png" height="250px">
+                        <div class="card-body">
+                            <p class="card-text">PlayerX Gaming is your ultimate destination for everything
+                                gaming-related. Founded by a team of
+                                passionate gamers, our goal is to provide a platform where gamers of all levels can
+                                connect, learn, and enhance their gaming experience.</p>
+                            <div class="d-flex justify-content-lg-start">
+                                <a href="https://playerxx.netlify.app" target="_blank">
+                                    <button type="button" class="btn btn-sm btn-outline-warning">Live Preview</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="photo/travel.png" height="250px">
+                        <div class="card-body">
+                            <p class="card-text">High- A Travel Agency is dedicated to creating unforgettable travel
+                                experiences for our clients.
+                                We have been serving travelers with passion and commitment, ensuring they explore the
+                                world with
+                                comfort and confidence.</p>
+                            <div class="d-flex justify-content-lg-start">
+                                <a href="https://high-travel-agency.netlify.app" target="_blank">
+                                    <button type="button" class="btn btn-sm btn-outline-warning">Live Preview</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="photo/cosmetic.png" height="250px">
+                        <div class="card-body">
+                            <p class="card-text">MyGlamm is your premier destination for all things beauty and
+                                cosmetics. Established with a
+                                passion for makeup and skincare, we are committed to bringing you the latest trends,
+                                high-quality products, and expert advice to enhance your beauty routine.</p>
+                            <div class="d-flex justify-content-lg-start">
+                                <a href="https://myglamm-cosmetic-product.netlify.app" target="_blank">
+                                    <button type="button" class="btn btn-sm btn-outline-warning">Live Preview</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="grid">
+        <h1 class="word">Take their word, clients love working with me.</h1>
+        <div class="test1">
+            <img class="wrapper" src="photo/test1.jpeg" alt="">
+        </div>
+        <div class="cont1">
+            “Marino has been absolutely core to growing my YouTube channel and business, taking control of
+            operations and managing a team from day one. His wealth of knowledge around digital & growth marketing
+            is exemplary and I wouldn’t hesitate to recommend him to anyone looking for help in growing an online
+            presence.”
+            <div class="moon">
+                <h5><strong>Charles Kerr</strong></h5>
+                <h6>CREATOR AND FOUNDER</h6>
+            </div>
+        </div>
+        <div class="test2">
+            <img class="wrapper" src="photo/test2.jpeg" alt="">
+        </div>
+        <div class="cont2">
+            “Working with Marino was a great experience. He brings endless energy, enthusiasm, and positivity to every
+            project. Plus, he never misses when it comes to communication. I could always count on him to go the extra
+            mile to make sure every part of every project was progressing steadily and creating a fantastic result.”
+            <div class="moon">
+                <h5><strong>Devin Fountain</strong></h5>
+                <h6>AGENCY FOUNDER</h6>
+            </div>
+        </div>
+        <div class="test3">
+            <img class="wrapper" src="photo/test3.jpeg" alt="">
+        </div>
+        <div class="cont3">
+            “Working with Marino was a great experience. When you need to partner with someone who is curious and
+            willing to take feedback and flip it into meaningful work, Marino is that guy. It’s not often you get to
+            collaborate with someone who embraces what other people know best and translates it into what he does well.”
+            <div class="moon">
+                <h5><strong>Defne Gencler</strong></h5>
+                <h6>AGENCY FOUNDER</h6>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact section">
+        <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+            <h2>Contact</h2>
+            <p>"For inquiries or collaboration opportunities, please feel free to reach out to me."</p>
+        </div>
+        <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <div class="info-wrap aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-5 my-4">
+                    <div class="col-lg-4">
+                        <div class="info-item d-flex align-items-center">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h3>Address</h3>
+                                <p>7/36 Jalalpet 3rd Street Ambur (635802)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="info-item d-flex align-items-center">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h3>Call Us</h3>
+                                <p>(+91) 979 141 3576</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="info-item d-flex align-items-center">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h3>Email Us</h3>
+                                <p>anees13576@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form action="forms/contact.php" method="post" class="php-email-form aos-init aos-animate"
+                data-aos="fade-up" data-aos-delay="300">
+                <div class="row gy-4">
+                    <div class="col-md-6">
+                        <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                    </div>
+                    <div class="col-md-6 ">
+                        <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                    </div>
+                    <div class="col-md-12">
+                        <textarea class="form-control" name="message" rows="6" placeholder="Message"
+                            required=""></textarea>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                        <button type="submit">Send Message</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer id="footer" class="footer accent-background">
+        <div class="container">
+            <div class="copyright text-center ">
+                <p>©<span>Copyright</span> <strong class="px-1 sitename">Ayesha Siddiqua</strong> <span>All Rights
+                        Reserved</span></p>
+            </div>
+            <div class="social-links d-flex justify-content-center">
+                <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
