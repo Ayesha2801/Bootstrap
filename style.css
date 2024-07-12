@@ -25,6 +25,20 @@ body {
     }
 }
 
+.border:hover{
+    opacity: 1;
+	animation: flash 1.5s;
+}
+
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 .linear {
     position: relative;
     width: 100%;
@@ -36,15 +50,17 @@ body {
 
 @keyframes transition {
     0% {
-      transform: skewY(45deg) translate(0, 5000px);
+        transform: skewY(45deg) translate(0, 5000px);
     }
+
     50% {
-      transform: skewY(45deg) translate(0, 0);
+        transform: skewY(45deg) translate(0, 0);
     }
+
     100% {
-      transform: skewY(45deg) translate(0, -5000px)
+        transform: skewY(45deg) translate(0, -5000px)
     }
-  }
+}
 
 .section {
     color: black;
@@ -224,6 +240,20 @@ body {
 .test1 {
     grid-area: 3 / 1 / 5 / 2;
     align-self: start;
+}
+
+.test1:hover, .test2:hover, .test3:hover {
+    opacity: .5;
+    animation: flash 1.5s;
+}
+
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 .cont1 {
