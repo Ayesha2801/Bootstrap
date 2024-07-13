@@ -104,34 +104,69 @@
             </div>
         </div>
     </div>
-    <div class="photo text-bg-light" id="home">
-        <img src="photo/background.jpg" class="img-fluid img" width="100%">
-    </div>
-    <div class="container web my-5">
-        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-                <h1 class="display-4 fw-bold lh-1">Web Development</h1>
-                <p>
-                    Web development is a dynamic and rewarding career path that involves building websites and web
-                    applications. As technology continues to evolve, the demand for skilled web developers remains high
-                    across various industries.
-                </p>
-                <p>
-                    We take a collaborative approach to web development, working closely with our clients to understand
-                    their goals and translate them into functional and scalable websites. Our team combines technical
-                    expertise with creativity to deliver custom solutions that exceed expectations.
-                </p>
-                <p>
-                    To start a career in web development, consider pursuing a formal education in computer science,
-                    software engineering, or related fields. Additionally, self-study through online courses, tutorials,
-                    and hands-on projects can help build practical skills and portfolios.
-                </p>
-            </div>
-            <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-                <img class="border rounded-lg-3" src="photo/border.avif">
-            </div>
+    <section id="contact" class="contact section">
+        <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+            <h2>Contact</h2>
+            <p>"For inquiries or collaboration opportunities, please feel free to reach out to me."</p>
         </div>
-    </div>
+        <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <div class="info-wrap aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-5 my-4">
+                    <div class="col-lg-4">
+                        <div class="info-item d-flex align-items-center">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h3>Address</h3>
+                                <p>7/36 Jalalpet 3rd Street Ambur (635802)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="info-item d-flex align-items-center">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h3>Call Us</h3>
+                                <p>(+91) 979 141 3576</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="info-item d-flex align-items-center">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h3>Email Us</h3>
+                                <p>anees13576@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form action="forms/contact.php" method="post" class="php-email-form aos-init aos-animate"
+                data-aos="fade-up" data-aos-delay="300">
+                <div class="row gy-4">
+                    <div class="col-md-6">
+                        <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                    </div>
+                    <div class="col-md-6 ">
+                        <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                    </div>
+                    <div class="col-md-12">
+                        <textarea class="form-control" name="message" rows="6" placeholder="Message"
+                            required=""></textarea>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                        <button type="submit">Send Message</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
     <footer id="footer" class="footer accent-background">
         <div class="container">
             <div class="copyright text-center ">
